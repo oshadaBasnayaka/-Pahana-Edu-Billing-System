@@ -298,7 +298,7 @@ body {
     </li>
     
     <li>
-      <a href="${pageContext.request.contextPath}/customer/About.jsp">
+      <a href="About.jsp">
         <i class="fas fa-info-circle me-2"></i>About Us
       </a>
     </li>
@@ -308,7 +308,7 @@ body {
       </a>
     </li>
     <li>
-      <a href="${pageContext.request.contextPath}/logout">
+      <a href="Login.jsp">
         <i class="fas fa-sign-out-alt me-2"></i>Logout
       </a>
     </li>
