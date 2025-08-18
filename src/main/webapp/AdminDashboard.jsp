@@ -190,11 +190,10 @@
             <li class="nav-item">
               <a class="nav-link" href="#"><i class="fas fa-file-invoice me-2"></i>Billing</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-question-circle me-2"></i>Help</a>
+            
             </li>
             <li class="nav-item">
-              <a class="nav-link text-danger" href="#"><i class="fas fa-sign-out-alt me-2"></i>Logout</a>
+              <a class="nav-link text-danger" href="Login.jsp"><i class="fas fa-sign-out-alt me-2"></i>Logout</a>
             </li>
           </ul>
         </div>
@@ -248,15 +247,20 @@
 
           <!-- Placeholder for table or chart -->
            <section class="mission-section">
-    
-<h5 class="mb-0">Admin Dashboard</h5>
 
       <div class="row g-4">
+       <!-- Topbar -->
+        <div class="topbar d-flex justify-content-between align-items-center py-3 px-4">
+          <h5 class="mb-0">Admin Dashboard</h5>
+          
+        </div>
         <!-- Manage Customers -->
         <div class="col-md-4">
           <div class="mission-card">
             <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Manage Customers">
-            <div class="mission-card-title">Manage Customers</div>
+            <div class="mission-card-title">
+            <a class="nav-link" href="CustomerController">Manage Customers</a>
+            </div>
           </div>
         </div>
 
@@ -264,7 +268,9 @@
         <div class="col-md-4">
           <div class="mission-card">
             <img src="https://cdn-icons-png.flaticon.com/512/4341/4341065.png" alt="Manage Items">
-            <div class="mission-card-title">Manage Items</div>
+            <div class="mission-card-title">
+            <a class="nav-link" href="ItemsController">Manage Items</a>
+            </div>
           </div>
         </div>
 

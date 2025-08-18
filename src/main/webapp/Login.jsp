@@ -149,7 +149,7 @@ body {
 <body>
   <div class="login-container">
     <div class="login-form">
-      <img src="/img/Logo for Pahana Edu Book Shop - Wordmark Style with Open Book.png" class="login-logo" alt="Book Shop Logo">
+      <img src="img/Logo for Pahana Edu Book Shop - Wordmark Style with Open Book.png" class="login-logo" alt="Book Shop Logo">
 
       <div class="login-header">
         <h1>Book Shop Login</h1>
@@ -176,8 +176,7 @@ body {
         <button type="submit" class="login-btn">Sign In</button>
       </form>
 
-      <div class="signup">
-        Don't have an account? <a href="register.jsp">Sign Up</a>
+      
       </div>
     </div>
   </div>

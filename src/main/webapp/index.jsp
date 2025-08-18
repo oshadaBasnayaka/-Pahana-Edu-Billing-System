@@ -27,7 +27,7 @@
 
         /* Hero Section */
         .hero {
-            background: url(/img/library-with-books.jpg) no-repeat center center/cover;
+            background: url(img/library-with-books.jpg) no-repeat center center/cover;
             color: white;
             height: 90vh;
             display: flex;
@@ -139,7 +139,7 @@
 <!-- Section Container: Image + Content -->
 <div class="section-container">
     <div class="image-container">
-        <img src="/img/Tide-gauge-location-at-Colombo-in-Sri-Lanka-Google-Maps-2021.png" alt="Books and Reading">
+        <img src="img/Tide-gauge-location-at-Colombo-in-Sri-Lanka-Google-Maps-2021.png" alt="Books and Reading">
     </div>
     <div class="content-container">
         <h1>Discover <span>your next favorite book</span></h1>
@@ -203,7 +203,7 @@
 <!-- Custom Cards / Apps Section -->
 <section class="apps-section">
     <div class="custom-card">
-        <img src="/img/qr-scan_4574762.png" alt="QR Code">
+        <img src="img/qr-scan_4574762.png" alt="QR Code">
         <div class="card-content">
             <h5>Download Our Bookshop App</h5>
             <p>Scan to shop anytime, anywhere</p>
@@ -212,12 +212,12 @@
     </div>
 
     <div class="custom-card">
-        <img src="/img/cartoon-people-character-illustration_665280-56285.png" alt="Feedback">
+        <img src="img/cartoon-people-character-illustration_665280-56285.png" alt="Feedback">
         <div class="card-content">
             <h5>About Us</h5>
             <p>Help us improve your book-buying journey</p>
         </div>
-        <a href="feedbackform.jsp">
+        <a href="About.jsp">
             <i class="fas fa-arrow-right arrow-icon"></i>
         </a>
     </div>

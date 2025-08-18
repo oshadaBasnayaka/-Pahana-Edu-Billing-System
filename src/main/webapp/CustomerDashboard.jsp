@@ -292,13 +292,13 @@ body {
       </a>
     </li>
     <li>
-      <a href="${pageContext.request.contextPath}/customer/orderHistory">
+      <a href="${pageContext.request.contextPath}/customer/">
         <i class="fas fa-clock me-2"></i>Your Orders
       </a>
     </li>
     
     <li>
-      <a href="${pageContext.request.contextPath}/customer/">
+      <a href="${pageContext.request.contextPath}/customer/About.jsp">
         <i class="fas fa-info-circle me-2"></i>About Us
       </a>
     </li>
