@@ -88,6 +88,42 @@
   	<description></description>
   	<servlet-class>com.icbt.controller.ItemsController</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>BookingController</servlet-name>
+  	<display-name>BookingController</display-name>
+  	<description></description>
+  	<servlet-class>com.icbt.controller.BookingController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>bookingController</servlet-name>
+  	<display-name>bookingController</display-name>
+  	<description></description>
+  	<servlet-class>com.icbt.controller.bookingController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Bookingcontroller</servlet-name>
+  	<display-name>Bookingcontroller</display-name>
+  	<description></description>
+  	<servlet-class>com.icbt.controller.Bookingcontroller</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>OrderController</servlet-name>
+  	<display-name>OrderController</display-name>
+  	<description></description>
+  	<servlet-class>com.icbt.controller.OrderController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>BillController</servlet-name>
+  	<display-name>BillController</display-name>
+  	<description></description>
+  	<servlet-class>com.icbt.controller.BillController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SaveBillController</servlet-name>
+  	<display-name>SaveBillController</display-name>
+  	<description></description>
+  	<servlet-class>com.icbt.controller.SaveBillController</servlet-class>
+  </servlet>
   
   
   <servlet-mapping>
@@ -146,4 +182,22 @@
   	<servlet-name>ItemController</servlet-name>
   	<url-pattern>/ItemController</url-pattern>
   </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Bookingcontroller</servlet-name>
+  	<url-pattern>/Bookingcoontroller</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>OrderController</servlet-name>
+  	<url-pattern>/OrderController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>BillController</servlet-name>
+  	<url-pattern>/billCcontroller</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SaveBillController</servlet-name>
+  	<url-pattern>/saveBillCooontroller</url-pattern>
+  </servlet-mapping>
+  
+  
 </web-app>

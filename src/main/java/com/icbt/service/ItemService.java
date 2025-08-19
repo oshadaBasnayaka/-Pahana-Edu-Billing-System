@@ -29,4 +29,9 @@ public class ItemService {
     public void deleteItem(int id) throws SQLException {
         itemDao.deleteItem(id);
     }
+
+	public Item getItem(int bookid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

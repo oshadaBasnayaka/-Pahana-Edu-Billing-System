@@ -20,7 +20,7 @@ public class ItemDao {
              PreparedStatement ps = con.prepareStatement(sql);
 
             ps.setString(1, item.getBookname());
-            ps.setString(2, item.getPrice());
+            ps.setDouble(2, item.getPrice());
             ps.setString(3, item.getAuthor());
             ps.executeUpdate();
             System.out.println("Item Added");
@@ -41,7 +41,7 @@ public class ItemDao {
             while (rs.next()) {
                 int bookid = rs.getInt("bookid");
                 String bookname = rs.getString("bookname");
-                String price = rs.getString("price");
+                double price = Double.parseDouble(rs.getString("price"));
                 String author = rs.getString("author");
 
                 itemList.add(new Item(bookid, bookname, price, author));
@@ -64,7 +64,7 @@ public class ItemDao {
             try (ResultSet rs = ps.executeQuery()) {
                 if (rs.next()) {
                     String bookname = rs.getString("bookname");
-                    String price = rs.getString("price");
+                    double price = Double.parseDouble(rs.getString("price"));
                     String author = rs.getString("author");
                     item = new Item(id, bookname, price, author);
                 }
@@ -83,7 +83,7 @@ public class ItemDao {
             PreparedStatement ps = con.prepareStatement(sql);
 
             ps.setString(1, item.getBookname());
-            ps.setString(2, item.getPrice());
+            ps.setDouble(2, item.getPrice());
             ps.setString(3, item.getAuthor());
             ps.setInt(4, item.getBookid());
 

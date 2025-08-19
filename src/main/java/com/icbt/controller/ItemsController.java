@@ -61,7 +61,7 @@ public class ItemsController extends HttpServlet {
 	        try {
 	            if ("add".equals(action)) {
 	                String name = request.getParameter("bookname");
-	                String price = request.getParameter("price");
+	                double price = Double.parseDouble(request.getParameter("price"));
 	                String author = request.getParameter("author");
 
 	                Item item = new Item(name, price, author);
@@ -70,7 +70,7 @@ public class ItemsController extends HttpServlet {
 	            } else if ("update".equals(action)) {
 	                int bookid = Integer.parseInt(request.getParameter("bookid"));
 	                String name = request.getParameter("bookname");
-	                String price = request.getParameter("price");
+	                double price = Double.parseDouble(request.getParameter("price"));
 	                String author = request.getParameter("author");
 
 	                Item item = new Item(bookid, name, price, author);

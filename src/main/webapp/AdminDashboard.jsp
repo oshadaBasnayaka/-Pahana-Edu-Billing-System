@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8" isELIgnored="false" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -188,7 +188,7 @@
               <a class="nav-link" href="ItemsController"><i class="fas fa-book me-2"></i>Items</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-file-invoice me-2"></i>Billing</a>
+              <a class="nav-link" href="selectBill.jsp"><i class="fas fa-file-invoice me-2"></i>Billing</a>
             </li>
             
             </li>

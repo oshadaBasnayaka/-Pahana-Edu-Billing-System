@@ -5,11 +5,14 @@ public class Item {
 	
 	private int bookid;
 	private String bookname;
-	private String price;
+	private double price;
 	private String author;
+	private int quantity;
+
 	
 	
-	public Item(int bookid, String bookname, String price, String author) {
+	
+	public Item(int bookid, String bookname, double price, String author) {
 		super();
 		this.bookid = bookid;
 		this.bookname = bookname;
@@ -22,7 +25,7 @@ public class Item {
 
 
 
-	public Item(String bookname, String price, String author) {
+	public Item(String bookname, double price, String author) {
 		super();
 		this.bookname = bookname;
 		this.price = price;
@@ -75,7 +78,7 @@ public class Item {
 
 
 
-	public String getPrice() {
+	public double getPrice() {
 		return price;
 	}
 
@@ -83,7 +86,7 @@ public class Item {
 
 
 
-	public void setPrice(String price) {
+	public void setPrice(double price) {
 		this.price = price;
 	}
 
@@ -104,7 +107,13 @@ public class Item {
 	}
 	
 	
-	
+	public int getQuantity() {
+	    return quantity;
+	}
+
+	public void setQuantity(int quantity) {
+	    this.quantity = quantity;
+	}
 	
 	
 
