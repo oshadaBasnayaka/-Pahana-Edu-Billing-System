@@ -124,6 +124,12 @@
   	<description></description>
   	<servlet-class>com.icbt.controller.SaveBillController</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>AdminDashboardController</servlet-name>
+  	<display-name>AdminDashboardController</display-name>
+  	<description></description>
+  	<servlet-class>com.icbt.controller.AdminDashboardController</servlet-class>
+  </servlet>
   
   
   <servlet-mapping>
@@ -197,6 +203,10 @@
   <servlet-mapping>
   	<servlet-name>SaveBillController</servlet-name>
   	<url-pattern>/saveBillCooontroller</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AdminDashboardController</servlet-name>
+  	<url-pattern>/AddminDashboardController</url-pattern>
   </servlet-mapping>
   
   

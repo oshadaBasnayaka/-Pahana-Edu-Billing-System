@@ -10,11 +10,59 @@
 <html>
 <head>
     <title>Select Customer and Items</title>
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+
+    <!-- Optional Custom CSS -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+        }
+
+        h2, h4 {
+            color: #343a40;
+        }
+
+        .form-check {
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 6px;
+        }
+
+        .form-check + .form-check {
+            margin-top: 10px;
+        }
+
+        .form-check-label {
+            margin-left: 5px;
+        }
+
+        .form-control-inline {
+            width: 100px;
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        .btn-primary {
+            display: block;
+            width: 100%;
+        }
+
+        label {
+            font-weight: 500;
+        }
+    </style>
 </head>
 <body>
 <div class="container mt-5">
-    <h2>Select Customer and Items to Generate Bill</h2>
+    <h2 class="text-center mb-4">Select Customer and Items to Generate Bill</h2>
 
     <%
         List<Customer> customers = null;
@@ -32,7 +80,7 @@
 
         } catch (Exception e) {
             e.printStackTrace();
-            out.println("<p style='color:red;'>Error loading customers or items!</p>");
+            out.println("<p class='text-danger'>Error loading customers or items!</p>");
         }
     %>
 
@@ -46,18 +94,19 @@
             </select>
         </div>
 
-        <h4>Select Items:</h4>
+        <h4 class="mt-4">Select Items:</h4>
         <c:forEach var="item" items="${itemsList}">
-            <div class="form-check mb-2">
+            <div class="form-check">
                 <input type="checkbox" class="form-check-input" name="itemId" value="${item.bookid}" id="item${item.bookid}"/>
                 <label class="form-check-label" for="item${item.bookid}">
-                    ${item.bookname} - Price: ${item.price}
+                    ${item.bookname} - Price: Rs. ${item.price}
                 </label>
-                Quantity: <input type="number" name="qty_${item.bookid}" value="1" min="1" class="form-control d-inline-block" style="width:80px;"/>
+                <input type="number" name="qty_${item.bookid}" value="1" min="1"
+                       class="form-control form-control-inline" />
             </div>
         </c:forEach>
 
-        <button type="submit" class="btn btn-primary mt-3">Generate Bill</button>
+        <button type="submit" class="btn btn-primary mt-4">Generate Bill</button>
     </form>
 </div>
 </body>

@@ -4,7 +4,43 @@
 <html>
 <head>
     <title>Customer Bill</title>
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+
+    <!-- Optional Custom CSS -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        h2 {
+            color: #343a40;
+            margin-bottom: 30px;
+        }
+
+        h4 {
+            margin-top: 40px;
+            color: #495057;
+        }
+
+        .table th, .table td {
+            vertical-align: middle;
+        }
+
+        .btn-success {
+            width: 200px;
+            display: block;
+            margin: 30px auto 0 auto;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
 <body>
 <div class="container mt-5">
@@ -21,7 +57,7 @@
 
     <h4>Purchased Items</h4>
     <table class="table table-bordered">
-        <thead>
+        <thead class="thead-light">
         <tr>
             <th>Book ID</th>
             <th>Book Name</th>
@@ -54,17 +90,17 @@
         </tr>
         </tfoot>
     </table>
-    
-    <form action="SaveBillController" method="post">
-    <!-- Hidden fields to send customer and items data -->
-    <input type="hidden" name="customerId" value="${customer.customer_id}" />
-    <c:forEach var="item" items="${items}">
-        <input type="hidden" name="itemId" value="${item.bookid}" />
-        <input type="hidden" name="qty_${item.bookid}" value="${item.quantity}" />
-    </c:forEach>
 
-    <button type="submit" class="btn btn-success mt-3">Save Bill</button>
-</form>
+    <form action="SaveBillController" method="post">
+        <!-- Hidden fields to send customer and items data -->
+        <input type="hidden" name="customerId" value="${customer.customer_id}" />
+        <c:forEach var="item" items="${items}">
+            <input type="hidden" name="itemId" value="${item.bookid}" />
+            <input type="hidden" name="qty_${item.bookid}" value="${item.quantity}" />
+        </c:forEach>
+
+        <button type="submit" class="btn btn-success">Download Bill</button>
+    </form>
 </div>
 </body>
 </html>

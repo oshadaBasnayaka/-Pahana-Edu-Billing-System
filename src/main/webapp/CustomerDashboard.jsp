@@ -302,11 +302,7 @@ body {
         <i class="fas fa-info-circle me-2"></i>About Us
       </a>
     </li>
-    <li>
-      <a href="${pageContext.request.contextPath}/customer/">
-        <i class="fas fa-user-edit me-2"></i>Edit Profile
-      </a>
-    </li>
+
     <li>
       <a href="Login.jsp">
         <i class="fas fa-sign-out-alt me-2"></i>Logout

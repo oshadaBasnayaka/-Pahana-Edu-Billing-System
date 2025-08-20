@@ -33,6 +33,10 @@ public class CustomerService {
 	    public void deleteCustomer(int customerId) throws SQLException {
 	        customerDao.deleteCustomer(customerId);
 	    }
+	    
+	    public int getTotalCustomerCount() throws SQLException {
+	        return customerDao.getTotalCustomerCount();
+	    }
 	}
 
 

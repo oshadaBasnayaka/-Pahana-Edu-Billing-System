@@ -215,7 +215,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                   <div>
                     <h6>Total Customers</h6>
-                    <h3>0</h3>
+                    <h3>8</h3>
                   </div>
                   <i class="fas fa-users fa-2x text-primary"></i>
                 </div>
@@ -226,7 +226,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                   <div>
                     <h6>Total Items</h6>
-                    <h3>0</h3>
+                    <h3>5</h3>
                   </div>
                   <i class="fas fa-book fa-2x text-success"></i>
                 </div>
@@ -237,7 +237,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                   <div>
                     <h6>Bills Generated</h6>
-                    <h3>0</h3>
+                    <h3>6</h3>
                   </div>
                   <i class="fas fa-receipt fa-2x text-warning"></i>
                 </div>
@@ -278,7 +278,9 @@
         <div class="col-md-4">
           <div class="mission-card">
             <img src="https://cdn-icons-png.flaticon.com/512/833/833314.png" alt="Bill Cart">
-            <div class="mission-card-title">View Bill</div>
+            <div class="mission-card-title">
+            <a class="nav-link" href="selectBill.jsp">View Bill</a>
+            </div>
           </div>
         </div>
       </div>

@@ -129,7 +129,24 @@ public class CustomerDao {
 	    preparedStatement.executeUpdate();
 	}
 
-	
+	 public int getTotalCustomerCount() {
+	        int count = 0;
+	        String query = "SELECT COUNT(*) FROM customer";
+
+	        try (Connection connection = DBConnectionFactory.getConnection();
+	             PreparedStatement preparedStatement = connection.prepareStatement(query);
+	             ResultSet rs = preparedStatement.executeQuery()) {
+	            
+	            if (rs.next()) {
+	                count = rs.getInt(1);
+	            }
+
+	        } catch (Exception e) {
+	            e.printStackTrace();
+	        }
+
+	        return count;
+	    }
 	
 	
 	

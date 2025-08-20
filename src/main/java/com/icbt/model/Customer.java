@@ -23,8 +23,6 @@ public class Customer {
 	public Customer() {
 	
 	}
-	
-
 
 
 	public Customer(String username, String email, String address, String phone_number) {

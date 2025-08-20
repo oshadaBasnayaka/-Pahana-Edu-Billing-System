@@ -49,6 +49,8 @@ public class CustomerController extends HttpServlet {
 				request.setAttribute("customers", customerList);
 				request.getRequestDispatcher("customer_crud.jsp").forward(request, response);
 			}
+			
+	       
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -88,4 +90,6 @@ public class CustomerController extends HttpServlet {
 
 		response.sendRedirect("CustomerController");
 	}
+	
+	
 }
